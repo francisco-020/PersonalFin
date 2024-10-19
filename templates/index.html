@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+
 </head>
 <body>
-    <p>Hello Welcome to my Personal Finance App.</p>
-    
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <nav class="main-nav">
+                    <a href="#">How it works</a>
+                    <a href="#" class="signup-btn">Sign up now</a>
+                </nav>
+            </div>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Easily create custom budgets to reach your goals</h1>
+                    <p>Take control of your financial future with our budgeting and investment tools. Track your spending, set goals, and manage your investments effectively.</p>
+                    <form class="cta-form">
+                        <input type="email" placeholder="Email address">
+                        <button type="submit" class="cta-button">Sign up now</button>
+                    </form>
+                </div>
+                <div class="hero-image">
+                    <img src="finance-app.png" alt="Finance App Screenshot">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Budgeting Section -->
+    <section id="budgeting" class="section">
+        <div class="container">
+            <h2>Budgeting</h2>
+            <p>Track your expenses, set goals, and maintain a budget that helps you achieve financial freedom.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Investments Section -->
+    <section id="investments" class="section">
+        <div class="container">
+            <h2>Investments</h2>
+            <p>Plan and track your investments. See how your money can grow over time with the right strategies.</p>
+            <a href="#" class="cta-button">Start Investing</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Personal Finance Tracker. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
