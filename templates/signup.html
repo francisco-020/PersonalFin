@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function validate()
+        {
+            var email = document.signup.email.value;
+            var firstname = document.signup.fname.value;
+            var lastname = document.signup.lname.value;
+            var pnumber = document.signup.pnum.value;
+
+            if(email=="" || firstname=="" || lastname=="" || pnumber==""){
+                alert("Fill in all the fields")
+            }
+            else{
+                if(pnumber.length!=10){
+                        alert("Phone number should be 10 digits long")
+                    }
+                    else{
+                        alert("Form submitted successfully")
+                    }
+                }
+            }
+        
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" width ="90" height ="80">
+                </div>
+                <nav class="main-nav">
+                    <a href="#">How it works</a>
+                    <a href="index.html" class="signup-btn">Go Back </a>
+                    <p> </p>
+                </nav>
+            </div>
+            <form name="signup">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td align="right"><label>E-mail: </label></td>
+                            <td><input type="text" name="email"/><br/></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label>First Name: </label></td>
+                            <td><input type="text" name="fname"/><br/></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><lable>Last Name: </lable></td>
+                            <td><input type="text" name="lname"/><br/></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label>Phone Number: </label></td>
+                            <td><input type="text" name="pnum"/><br/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="submit" onclick="validate();"/></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+                </div>
+            </div>
+        </div>
+    </header>

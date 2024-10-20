@@ -3,14 +3,14 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a2e; /* Dark blue (almost black) background */
-    color: #eaeaea; /* Light gray text for readability */
+    background-color: #788a87; /* Dark Turquoise  (almost black) background */
+    color: #f4f4f4; /* Light gray text for readability */
     line-height: 1.6;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 h1, h2 {
@@ -19,9 +19,9 @@ h1, h2 {
 
 /* Header Section */
 .main-header {
-    background-color: #16213e; /* Darker blue for contrast */
+    background-color: #8ca19e; /* olive green for contrast */
     padding: 20px 0;
-    border-bottom: 1px solid #0f3460; /* Darker divider */
+    border-bottom: 3px solid #788a87; /* Darker divider */
 }
 
 .header-content {
@@ -31,7 +31,7 @@ h1, h2 {
 }
 
 .main-nav a {
-    margin: 0 15px;
+    margin: 30px 15px;
     text-decoration: none;
     color: #eaeaea; /* Lighter text color for navigation */
 }
@@ -45,7 +45,7 @@ h1, h2 {
 }
 
 .signup-btn:hover {
-    background-color: #d52a48; /* Darker hover color */
+    background-color: #af0f2b; /* Darker hover color */
 }
 
 /* Hero Section */
@@ -53,19 +53,19 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
-    background-color: #0f3460; /* Dark blue background */
+    padding: 50px 20px;
+    background-color: #8fb6ab; /* pale turquoise  background */
 }
 
 .hero-text h1 {
     font-size: 2.5rem;
     color: #f0f0f0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero-text p {
     font-size: 1.2rem;
-    color: #dcdcdc; /* Muted light gray */
+    color: #f0f0f0; /* Muted light gray */
     margin-bottom: 20px;
 }
 
@@ -97,7 +97,7 @@ h1, h2 {
 }
 
 .cta-form button:hover {
-    background-color: #d52a48; /* Darker hover */
+    background-color: #af0f2b; /* Darker hover */
 }
 
 /* Section Styles */
@@ -107,11 +107,23 @@ h1, h2 {
 }
 
 #budgeting {
-    background-color: #16213e; /* Same as header for consistency */
+    background-color: #8fb6ab; /* Same as header for consistency */
 }
 
 #investments {
-    background-color: #1a1a2e; /* Same as body background for uniformity */
+    background-color: #86b3a6; /* Same as body background for uniformity */
+}
+
+#managing_finances {
+    background-color: #8fb6ab;
+}
+
+#savings {
+    background-color: #86b3a6;
+}
+
+#resources {
+    background-color: #8fb6ab;
 }
 
 .cta-button {
@@ -125,18 +137,13 @@ h1, h2 {
 }
 
 .cta-button:hover {
-    background-color: #2980b9; /* Darker blue hover effect */
-}
-
-.logo img{
-    width: 150px;
-    height: auto;
+    background-color: #346edb; /* Darker blue hover effect */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background-color: #0f3460;
+    background-color: #8ca19e;
     color: #f0f0f0;
     padding: 20px;
 }
