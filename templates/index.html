@@ -14,7 +14,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="logo.png" alt="Logo">
+                    <img src="{{ url_for('static', filename='PersonalFinance.png') }}" alt="Logo">
                 </div>
                 <nav class="main-nav">
                     <a href="#">How it works</a>
@@ -31,7 +31,8 @@
                     </form>
                 </div>
                 <div class="hero-image">
-                    <img src="finance-app.png" alt="Finance App Screenshot">
+                    <img src="{{ url_for('static', filename='finance-app.png') }}" alt="Finance App Screenshot">
+
                 </div>
             </div>
         </div>
